@@ -1,0 +1,95 @@
+
+.table-operation {
+    box-shadow: rgba(0,0,0,0.05) 0px 0px 5px 3px;
+    background-color: #FDFEFF;
+    margin-top: 20px;
+}
+.right {
+    float: right;
+}
+.main-content {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: #fff;
+}
+.btn-margin {
+    margin-right: 10px;
+}
+.text-color {
+    color: #45B2E6;
+    font-family: 'Nunito Semi';
+}
+.table-text {
+    font-family: 'Nunito';
+    color: #838383;
+    font-size: 9px;
+} 
+.float-right {
+    float: right;
+}
+.employee-div {
+    margin-left: 300px;
+}
+.btn-add {
+    margin-left: 12px;
+}
+.btn-setting {
+    margin-left: 18px;
+}
+.num-label {
+    margin-top: 4px;
+    margin-left: 12px;
+    color: #45B2E6;
+    font-family: 'Nunito Semi';
+}
+.batch-div {
+    margin-top: 20px;
+}
+.btn-import {
+    margin-left: 155px;
+    color: #ABABAB;
+}
+.btn-export {
+    margin-left: 140px; 
+    color: #ABABAB; 
+}
+.btn-edit {
+    margin-left: 125px;
+    color: #ABABAB;
+}
+.sub-text {
+    font-family: 'Nunito Semi';
+    color: #9BA9C0;
+}
+
+.import-button {
+    margin-left: 18px;
+    color: #ABABAB;
+    font-family: 'Nunito Semi';
+}
+.export-button {
+    margin-left: 12px;
+    color: #ABABAB;
+    font-family: 'Nunito Semi';
+}
+.divider {
+    margin-top: 12px;
+}
+.btn-add-holiday {
+    margin-left: 10px;
+    background-color: #70CCF9;
+    border-color: #6CC6F1;
+    font-family: 'Nunito Semi';
+}
+.btn-imp-holiday {
+    margin-left: 20px;
+    color: #70CCF9;
+    border-color: #6CC6F1;
+    font-family: 'Nunito Semi';
+}
+.btn-primary {
+    background-color: #70CCF9;
+    border-color: #6CC6F1;
+    font-family: 'Nunito Semi';
+}

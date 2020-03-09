@@ -1,0 +1,306 @@
+@import url(~antd/dist/antd.css);
+@font-face {
+  font-family: 'Nunito';
+  src: url('./shared/assets/Nunito/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito Extra';
+  src: url('./shared/assets/Nunito/Nunito-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito Semi';
+  src: url('./shared/assets/Nunito/Nunito-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito Bold';
+  src: url('./shared/assets/Nunito/Nunito-Bold.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito'
+}
+
+#root, .app-main, .full-height {
+  height: 100%
+}
+
+.inherit-height {
+  height: inherit;
+}
+
+/* Custom scrollbar CSS */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 6px;
+  background: gray; }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(220, 220, 220, 0.2); 
+}
+
+.side-menu {
+  background-image: linear-gradient(#2583CB, #56B2F9);
+}
+
+.dash-menu {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  height: calc(100% - 91px);
+  background: transparent;
+  border-right: inherit;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dash-menu .ant-menu-item {
+  padding: 0 16px 0 30px;
+  font-family: 'Nunito';
+  display: flex;
+}
+
+.dash-menu .ant-menu-submenu {
+  margin: 0 !important;
+}
+
+.dash-menu.ant-menu-inline .ant-menu-item {
+  width: 100% !important;
+}
+
+.dash-menu.ant-menu-inline .ant-menu-item:after {
+  border-right: transparent;
+}
+
+.dash-menu .ant-menu-sub.ant-menu-inline {
+  background-color: transparent;
+}
+
+.dash-menu li.ant-menu-item.ant-menu-item-active .custom-menu-icon svg,
+.dash-menu li.ant-menu-submenu.ant-menu-submenu-active .custom-menu-icon svg {
+  transition-delay: 0.08s;
+  fill: rgba(255, 255, 255, 1);
+}
+
+.dash-menu li.ant-menu-item .custom-menu-icon svg,
+.dash-menu li.ant-menu-submenu .custom-menu-icon svg {
+  transition-delay: 0.1s;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.dash-menu li.ant-menu-item.ant-menu-item-selected .custom-menu-icon svg {
+  fill: white;
+}
+
+.request-submenu.ant-menu-submenu-popup {
+  left: 85px !important;
+}
+
+.dash-menu li.ant-menu-item.ant-menu-item-active,
+.dash-menu li.ant-menu-submenu.ant-menu-submenu-active,
+.request-submenu.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub.ant-menu li.ant-menu-item.ant-menu-item-active{
+  background-color: rgba(16, 51, 110, 0.12);
+  color: rgba(255, 255, 255, 1);
+}
+
+.dash-menu li.ant-menu-submenu li.ant-menu-item.ant-menu-item-active .sub-menu-custom-label,
+.dash-menu li.ant-menu-submenu li.ant-menu-item.ant-menu-item-selected .sub-menu-custom-label,
+.request-submenu.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub.ant-menu li.ant-menu-item.ant-menu-item-active .sub-menu-custom-label,
+.request-submenu.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub.ant-menu li.ant-menu-item.ant-menu-item-selected .sub-menu-custom-label {
+  color: white;
+}
+
+.request-submenu.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub.ant-menu li.ant-menu-item .sub-menu-custom-label{
+  padding: 0
+}
+
+.request-submenu.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub.ant-menu li.ant-menu-item {
+  text-align: center;
+}
+
+.dash-menu li.ant-menu-submenu .menu-item-label span {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.5s ease 0s;
+}
+
+.dash-menu li.ant-menu-submenu .ant-menu-submenu-title i.ant-menu-submenu-arrow::after,
+.dash-menu li.ant-menu-submenu .ant-menu-submenu-title i.ant-menu-submenu-arrow::before{
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dash-menu li.ant-menu-submenu.ant-menu-submenu-active .ant-menu-submenu-title i.ant-menu-submenu-arrow::after,
+.dash-menu li.ant-menu-submenu.ant-menu-submenu-active .ant-menu-submenu-title i.ant-menu-submenu-arrow::before{
+  background: rgba(255, 255, 255, 1);
+}
+
+.dash-menu li.ant-menu-submenu.ant-menu-submenu-active .menu-item-label span {
+  color: rgba(255, 255, 255, 1);
+  transition: color 0.5s ease 0s;
+}
+
+.dash-menu li.ant-menu-item.ant-menu-item-selected,
+.dash-menu li.ant-menu-submenu.ant-menu-submenu-selected,
+.request-submenu.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub.ant-menu li.ant-menu-item.ant-menu-item-selected {
+  background-color: rgba(16, 51, 110, 0.12);
+  color: white;
+}
+
+.custom-menu-icon {
+  width: 30px;
+  height: inherit;
+  margin-right: 20px !important;
+}
+
+.custom-menu-icon svg {
+  display: block !important;
+  position: relative;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.menu-item-title .ant-menu-item-group-title {
+  font-family: 'Nunito Bold';
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-item-title.on-display .ant-menu-item-group-title {
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
+}
+
+.menu-item-title.hidden .ant-menu-item-group-title {
+  transition-delay: 0.2s;
+  display: none;
+}
+
+.menu-item-label {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Nunito Bold';
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 200px;
+  height: 27px;
+  background: rgba(255, 255, 255, 0.12);
+  margin-top: 20px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Nunito Semi';
+  color: rgba(255, 255, 255, 0.65);
+  /* transition-duration: 0.2s; */
+}
+
+.footer-hidden {
+  display: none;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.yellow-tail {
+  height: 100%;
+  width: 5px;
+  position: absolute;
+}
+
+.right {
+  right: 0px;
+}
+
+.left {
+  left: 0px;
+}
+
+.dash-menu li.ant-menu-item .yellow-tail {
+  transition-delay: 0.07s;
+  background-color: transparent;
+}
+
+.dash-menu li.ant-menu-item.ant-menu-item-selected .yellow-tail {
+  transition-delay: 0.07s;
+  background-color: #FCD21B;
+}
+
+.dash-menu li.ant-menu-item.ant-menu-item-active .yellow-tail {
+  transition-delay: 0.07s;
+  background-color: #FCD21B;
+}
+
+.side-menu-toggle {
+  height: 100%;
+  font-size: 25px;
+  border: none;
+  outline: 0 !important;
+  padding: 0px !important;
+}
+
+.side-menu-toggle:focus {
+  outline: 0 !important;
+  outline: none !important;
+}
+
+.side-menu .dash-menu .ant-menu-item,
+.side-menu .dash-menu .ant-menu-submenu .ant-menu-submenu-title {
+  padding: 0 26px !important;
+  margin: 0px !important;
+}
+
+.side-menu.ant-layout-sider-collapsed .dash-menu .ant-menu-item,
+.side-menu.ant-layout-sider-collapsed .dash-menu .ant-menu-submenu .ant-menu-submenu-title{
+  padding: 0 24px !important;
+}
+
+.side-menu.ant-layout-sider-collapsed .dash-menu .ant-menu-submenu .custom-menu-icon svg{
+  width: 30px;
+  height: 30px;
+}
+
+.side-menu.ant-layout-sider-collapsed .dash-menu li.ant-menu-item.ant-menu-item-selected .custom-menu-icon svg{
+  fill: #FCD21B;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+}
+
+.sub-menu-custom-label {
+  padding-left: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Nunito Bold';
+}
+
+.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub.ant-menu {
+  background-color: #56B2F9;
+}
+
+.ant-form-item-required::before {
+  content: none
+}
+
+.ant-calendar-time.ant-calendar.ant-calendar-range .ant-calendar-time-picker-panel 
+.ant-calendar-time-picker-inner {
+  padding-top: 0px !important;
+}
+
+.ant-calendar-time.ant-calendar.ant-calendar-range .ant-calendar-panel 
+.ant-calendar-footer.ant-calendar-range-bottom.ant-calendar-footer-show-ok {
+  display: none;
+}
+
